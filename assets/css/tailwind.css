@@ -32,7 +32,7 @@
     }
 
     .hero__img {
-        @apply w-full h-screen bg-[url('https://res.cloudinary.com/dfoesshfi/image/upload/f_auto,q_auto/v1/Katalane/qpgns506xikvhqbkjd53')] bg-cover bg-center;
+        @apply w-full min-h-screen bg-[url('https://res.cloudinary.com/dfoesshfi/image/upload/f_auto,q_auto/v1/Katalane/qpgns506xikvhqbkjd53')] bg-cover bg-center;
     }
 
     #menu-md li:not(:last-child) {
@@ -44,6 +44,6 @@
     }
 
     .hero__form {
-        @apply p-4 bg-white h-max shadow-lg xl:absolute z-20 right-36 bottom-36 self-center mx-auto flex-col flex items-center justify-center gap-4;
+        @apply p-4 bg-white h-max shadow-lg xl:absolute z-10 xl:right-36 xl:bottom-24 mt-44 xl:mt-0 xl:mb-0 mb-6 self-center xl:self-end mx-auto flex-col flex items-center justify-center gap-4;
     }
 }
