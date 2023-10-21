@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Inter", sans-serif;
+    }
+
+    html {
+        @apply !bg-gray-100;
+    }
+
+    .header {
+        @apply w-full absolute z-20;
+    }
+
+    .header__logo {
+        @apply flex flex-row items-center justify-center gap-4;
+    }
+
+    .header__logo img {
+        @apply h-8 fill-blue-700;
+    }
+
+    .header__logo h1 {
+        @apply text-3xl text-blue-700;
+    }
+
+    .header__nav {
+        @apply relative z-20 w-full;
+    }
+
+    .hero__img {
+        @apply w-full h-screen bg-[url('https://res.cloudinary.com/dfoesshfi/image/upload/f_auto,q_auto/v1/Katalane/qpgns506xikvhqbkjd53')] bg-cover bg-center;
+    }
+
+    #menu-md li:not(:last-child) {
+        @apply border-r border-gray-300;
+    }
+
+    #menu-md li a {
+        @apply hover:bg-transparent focus:bg-transparent active:!bg-transparent hover:text-blue-400;
+    }
+
+    .hero__form {
+        @apply p-4 bg-white h-max shadow-lg xl:absolute z-20 right-36 bottom-36 self-center mx-auto flex-col flex items-center justify-center gap-4;
+    }
+}
