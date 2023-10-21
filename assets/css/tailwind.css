@@ -46,4 +46,12 @@
     .hero__form {
         @apply p-4 bg-white h-max shadow-lg xl:absolute z-10 xl:right-36 xl:bottom-24 mt-44 xl:mt-0 xl:mb-0 mb-6 self-center xl:self-end mx-auto flex-col flex items-center justify-center gap-4;
     }
+
+    .section__listing {
+        @apply flex flex-col lg:flex-row items-center justify-center gap-4 p-4 container mx-auto py-8 pb-12;
+    }
+
+    .section__paragraph {
+        @apply flex flex-col items-center justify-center gap-4 w-5/6 lg:w-1/2 text-center mx-auto py-8;
+    }
 }
