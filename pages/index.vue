@@ -66,7 +66,7 @@
     <section class="section__listing">
         <template v-for="image in Images" >
             <a href="#">
-        <div class="card w-42 md:w-96 before:!rounded-none rounded-none shadow-xl image-full">
+        <div class="card w-full lg:w-96 before:!rounded-none rounded-none shadow-xl image-full">
             <figure><img class="w-full" :src="image.img" :alt="image.alt" /></figure>
             <div class="card-body !text-white justify-end items-center bg-black/5 hover:bg-white/5">
                 <h3 class="card-title p-2 border-t border-white">{{ image.alt }}</h3>
