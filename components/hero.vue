@@ -21,7 +21,7 @@
             </div>
             <Navigation></Navigation>
             <div class="hero__index">
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-5 p-8">
                     <h1 class="text-4xl text-white font-bold">Set Sail Beyond the Horizon</h1>
                     <a class="btn bg-blue-500 text-white rounded-none border-none" href="#">Discover Our Fleet</a>
                 </div>
