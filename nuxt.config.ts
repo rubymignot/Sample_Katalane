@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/cloudinary",
     '@nuxtseo/module',
     '@nuxtjs/google-fonts',
+    'nuxt-gtag',
   ],
   ssr: true,
   tailwindcss: {
@@ -46,5 +47,8 @@ export default defineNuxtConfig({
       siteDescription: "Sample site for Ruby Mignot's portfolio.",
       language: 'en-US',
     }
+  },
+  gtag: {
+    id: 'G-4T00WWBYJJ'
   },
 })
