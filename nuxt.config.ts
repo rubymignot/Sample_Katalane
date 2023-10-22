@@ -46,7 +46,8 @@ export default defineNuxtConfig({
       siteName: 'Katalane | Catamarans near you',
       siteDescription: "Sample site for Ruby Mignot's portfolio.",
       language: 'en-US',
-    }
+    },
+    indexable: false,
   },
   gtag: {
     id: 'G-4T00WWBYJJ'
