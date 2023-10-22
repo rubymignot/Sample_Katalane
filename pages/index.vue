@@ -1,4 +1,12 @@
 <template>
+    
+    <div class="alert rounded-none py-2 bg-gray-200 text-black font-bold" v-if="alert_sample">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <span>This is a sample website. To visit my portfolio, go to <a class="link link-hover" href="https://rubymignot.com">rubymignot.com</a></span>
+  <div>
+    <button class="btn btn-sm" @click="close_alert">Close</button>
+  </div>
+</div>
     <Header></Header>
     <section class="hero__img flex">
         <div class="w-full h-screen absolute bg-black/30"></div>
@@ -80,6 +88,11 @@
 </footer>
 </template>
 <script setup lang="ts">
+const alert_sample = ref(true)
+// turn off alert_sample to remove the alert
+async function close_alert() {
+    alert_sample.value = false
+}
 const Images = [
     { img: "https://res.cloudinary.com/dfoesshfi/image/upload/f_auto,q_auto/v1/Katalane/Listing/maqdlqxb41hnv05jzz19", alt: "Latest Listings" },
     { img: "https://res.cloudinary.com/dfoesshfi/image/upload/f_auto,q_auto/v1/Katalane/Listing/zmbbi9cu41rroynjvomv", alt: "Latest Price Cuts" },
