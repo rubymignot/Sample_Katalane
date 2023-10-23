@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://katalane.rubymignot.com',
+      siteUrl: 'https://sample-katalane.rubymignot.com',
       siteName: 'Katalane | Catamarans near you',
       siteDescription: "Sample site for Ruby Mignot's portfolio.",
       language: 'en-US',
